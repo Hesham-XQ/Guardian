@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.samo.happybirthday.MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pyramids_of_giza" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:padding="8dp"
+        android:text="Welcome to EGYPT :)"
+        android:textColor="#cc3300"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_below="@id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:padding="2dp"
+        android:paddingLeft="9dp"
+        android:text="here you will find love and peace you will see the oldest civilization on the world ^_^ "
+        android:textColor="#cc3300"
+        android:textSize="20sp"
+        android:id="@+id/text1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:fontFamily="sans-serif-light"
+        android:padding="10dp"
+        android:text="Waiting for you !"
+        android:textColor="#d1e0e0"
+        android:textSize="24sp"
+        android:id="@+id/textView" />
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicat.MainActivity"
+    android:orientation="vertical" >
+
+
+   <TextView
+       android:id="@+id/fayrouz_text"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:paddingTop="15dp"
+       android:paddingBottom="15dp"
+       android:text="fayrouz"
+       android:textSize="30sp"
+       android:gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="ADELE"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="RELAX"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="WORKOUT"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"/>
+
+</LinearLayout>

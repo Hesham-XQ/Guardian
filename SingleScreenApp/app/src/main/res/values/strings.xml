@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">XQ Tourism</string>
+    <string name="phone_number">+201281111557</string>
+    <string name="email">Xtravel@gmail.com</string>
+    <string name="address">EGYPT - Cairo - Sheraton st.</string>
+    <string name="phone_des">Phone</string>
+    <string name="location_des">Location</string>
+    <string name="mail_des">Email</string>
+    <string name="main_des">Giza Pyramids</string>
+    <string name="description">XQ Tourism is a \'One Stop\' registered Travel Agency offering Airline Tickets, Hotel Accommodation, Cruises, Travel Insurance, Visa Applications, etc.</string>
+</resources>

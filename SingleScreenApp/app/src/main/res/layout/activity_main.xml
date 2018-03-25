@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1d0e0e0e">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.android.singlescreenapp.MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/main_des"
+            android:src="@drawable/egypt" />
+
+        <LinearLayout style="@style/layout">
+
+            <ImageView
+                style="@style/image"
+                android:contentDescription="@string/phone_des"
+                android:src="@drawable/ic_phone_black_24dp" />
+
+            <TextView
+                style="@style/textView"
+                android:text="@string/phone_number"
+                android:autoLink="phone"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/layout">
+
+            <ImageView
+                style="@style/image"
+                android:contentDescription="@string/mail_des"
+                android:src="@drawable/ic_email_black_24dp" />
+
+            <TextView
+                style="@style/textView"
+                android:text="@string/email"
+                android:autoLink="email"/>
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/layout">
+
+            <ImageView
+                style="@style/image"
+
+                android:contentDescription="@string/location_des"
+                android:src="@drawable/ic_location_on_black_24dp" />
+
+            <TextView
+                style="@style/textView"
+                android:text="@string/address" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/layout">
+
+            <ImageView
+                style="@style/image"
+                android:contentDescription="@string/location_des"
+                android:src="@drawable/ic_featured_play_list_black_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginRight="@dimen/padding_5"
+                android:text="@string/description"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

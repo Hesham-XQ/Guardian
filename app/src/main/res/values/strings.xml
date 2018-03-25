@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Guardian</string>
+    <string name="no_internet_connection_message">No internet connection</string>
+    <string name="no_results_message">No results found</string>
+    <string name="wait">PLZ wait !!!</string>
+    <string name="no_article">No articles to show !!!</string>
+    <string name="refresh">Refreshing Now !!</string>
+    <string name="list_title">Main title</string>
+    <string name="list_section">Section</string>
+    <string name="list_time">Publish time</string>
+    <string name="list_author">Contributer name</string>
+
+</resources>
