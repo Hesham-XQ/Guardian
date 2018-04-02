@@ -12,6 +12,8 @@ import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -75,29 +77,9 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
                 Uri newsUri = Uri.parse(ur);
                 Intent websiteIntent = new Intent(Intent.ACTION_VIEW, newsUri);
-                startActivity(websiteIntent);
-            }
+                startActivity(websiteIntent);}
 
-
-//            // Handles the row being being clicked
-//            @Override
-//            public void onClick(View view) {
-//                int position = getAdapterPosition();
-//                News news = mNews.get(position);
-//
-//                // Get the Url from the current NewsItem
-//                mURL = news.getWebURL();
-//
-//                // Convert the String URL into a URI object (to pass into the Intent constructor)
-//                Uri newsURI = Uri.parse(mURL);
-//                // Create new intent to view the article's URL
-//                Intent websiteIntent = new Intent(Intent.ACTION_VIEW, newsURI);
-//                // Start the intent
-//                context.startActivity(websiteIntent);
-//            }
-
-        });
-    }
+        });}
 
     @Override
     public Loader<List<News>> onCreateLoader(int id, Bundle args) {
@@ -131,6 +113,29 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         newsSearchResultsListView.setAdapter(newsAdapter);
     }
 
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.action_settings) {
+            Intent settingsIntent = new Intent(this, SettingsActivity.class);
+            startActivity(settingsIntent);
+            return true;
+        }
+
+        if (id == R.id.action_refresh) {
+           refresh();
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 
     public void refresh() {
         ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
